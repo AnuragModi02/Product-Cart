@@ -104,6 +104,10 @@ img{
     height: 43px;
 }
 
+.add-to-cart p {
+ font-weight: 500;
+}
+
 .add-to-cart:hover{
     cursor: pointer;
 }
