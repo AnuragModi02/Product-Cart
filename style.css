@@ -317,4 +317,8 @@ img{
     .cart{
         padding: 20px;
     }
+
+    .allow-add > img{
+        width: 29px;
+    }
 }
