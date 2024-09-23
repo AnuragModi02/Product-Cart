@@ -39,7 +39,7 @@ img{
 
 .card-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     column-gap: 25px;
     row-gap: 35px;
 }
@@ -87,6 +87,7 @@ img{
 .add-to-cart{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     border: 1px solid var(--rose-400);
     width: 65%;
@@ -185,7 +186,7 @@ img{
 
 .meta{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, auto);
     padding: 8px;
     width: 80%;
     grid-row: 2/2;
@@ -286,4 +287,34 @@ img{
     justify-content: center;
     align-items: center;
     margin-top: 3px;
+}
+
+@media (max-width: 1231px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        row-gap:50px;        
+    }
+
+    .cart{
+        padding-inline: 80px;
+        padding-block: 75px;
+    }
+
+    .total-cart-items{
+        justify-self: center;
+    }
+
+    .main-container{
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+   
+}
+
+
+@media(max-width: 687px){
+    .cart{
+        padding: 20px;
+    }
 }
